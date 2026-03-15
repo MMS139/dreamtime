@@ -31,5 +31,10 @@ func _physics_process(delta: float) -> void:
 		dash_timer -= delta
 		if dash_timer <= 0:
 			is_dashing = false
+	
+	if velocity.x < 0:
+		$Sprite2D.flip_h = 1
+	elif velocity.x > 0:
+		$Sprite2D.flip_h = 0
 
 	move_and_slide()
