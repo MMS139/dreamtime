@@ -18,8 +18,9 @@ func _physics_process(delta: float) -> void:
 	if not is_dashing:
 		velocity.x = direction * speed
 
-	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = jump_velocity
+	if Input.is_action_just_pressed("jump"):
+		if (gravity > 0 and is_on_floor()) or (gravity < 0 and is_on_ceiling()):
+			velocity.y = jump_velocity
 
 	if Input.is_action_just_pressed("dash") and not is_dashing:
 		is_dashing = true
