@@ -2257,7 +2257,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8kj3"]
-size = Vector2(128.5, 160)
+size = Vector2(128.5, 86)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s1bpp"]
 size = Vector2(128, 65)
@@ -2296,7 +2296,7 @@ position = Vector2(1536, 800)
 script = ExtResource("4_0fm5q")
 
 [node name="WinAreaCollision" type="CollisionShape2D" parent="WinArea"]
-position = Vector2(0, 80)
+position = Vector2(0, 117)
 shape = SubResource("RectangleShape2D_v8kj3")
 
 [node name="FlipGrav" type="Area2D" parent="."]

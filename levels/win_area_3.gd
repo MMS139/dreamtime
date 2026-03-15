@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var next_level = "res://levels/level4.tscn"
+@export var next_level = "res://winscreen.tscn"
 
 func _on_body_entered(body):
 	if body.is_in_group("player"):

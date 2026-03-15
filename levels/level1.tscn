@@ -2255,7 +2255,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_1bvp3")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8kj3"]
-size = Vector2(128, 164)
+size = Vector2(128, 87)
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_ootpb")
@@ -2279,7 +2279,7 @@ position = Vector2(1536, 800)
 script = ExtResource("4_v38iq")
 
 [node name="WinAreaCollision" type="CollisionShape2D" parent="WinArea"]
-position = Vector2(0, 78)
+position = Vector2(0, 116.5)
 shape = SubResource("RectangleShape2D_v8kj3")
 
 [connection signal="body_entered" from="WinArea" to="WinArea" method="_on_body_entered"]

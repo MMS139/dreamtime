@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="dreamtime"
-run/main_scene="uid://b11nyo5vd5rqo"
+run/main_scene="uid://dkygqdhchtpi0"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
